@@ -1,1 +1,390 @@
-<html><head><link rel='stylesheet' href='style.css'></head><body><header><div class='logo'>SmartShoppingGuide</div></header><section class='hero'><h1>Find the Best Products Before You Buy</h1><a class='btn' href='reviews.html'>Explore Reviews</a></section><div class='wrap'><div class='grid'><div class='card'><h3>Best Earbuds</h3></div><div class='card'><h3>Top Smartwatches</h3></div><div class='card'><h3>Best Power Banks</h3></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartShoppingGuide</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081120;
+color:white;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#f8b400;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(135deg,#0f172a,#1e40af);
+}
+
+.hero-content h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+opacity:0.9;
+}
+
+.btns{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+border-radius:50px;
+text-decoration:none;
+margin:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.primary{
+background:#f59e0b;
+color:black;
+}
+
+.secondary{
+border:2px solid white;
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.3rem;
+margin-bottom:50px;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.category{
+background:rgba(255,255,255,0.05);
+padding:35px;
+border-radius:20px;
+text-align:center;
+backdrop-filter:blur(10px);
+transition:.3s;
+}
+
+.category:hover{
+transform:translateY(-8px);
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.product{
+background:rgba(255,255,255,0.05);
+border-radius:20px;
+overflow:hidden;
+transition:.3s;
+}
+
+.product:hover{
+transform:translateY(-10px);
+}
+
+.product img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.product-content{
+padding:20px;
+}
+
+.rating{
+color:#f59e0b;
+margin:10px 0;
+}
+
+.buy-btn{
+display:inline-block;
+margin-top:15px;
+background:#f59e0b;
+color:black;
+padding:10px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+}
+
+.trust{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.trust-box{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.newsletter{
+text-align:center;
+background:#101c33;
+padding:70px 20px;
+}
+
+.newsletter input{
+padding:14px;
+width:300px;
+max-width:90%;
+border:none;
+border-radius:30px;
+margin-top:20px;
+}
+
+.newsletter button{
+padding:14px 25px;
+border:none;
+border-radius:30px;
+background:#f59e0b;
+font-weight:600;
+cursor:pointer;
+margin-left:10px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#050b15;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.1rem;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">SmartShoppingGuide</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Reviews</a>
+<a href="#">Deals</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Find The Best Products Before You Buy</h1>
+
+<p>
+Honest reviews, buying guides and top product recommendations
+to help you make smarter shopping decisions.
+</p>
+
+<div class="btns">
+<a href="#" class="btn primary">Explore Reviews</a>
+<a href="#" class="btn secondary">Latest Deals</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Popular Categories</h2>
+
+<div class="categories">
+
+<div class="category">🎧 Earbuds</div>
+<div class="category">⌚ Smartwatches</div>
+<div class="category">🔋 Power Banks</div>
+<div class="category">📱 Smartphones</div>
+<div class="category">💻 Laptops</div>
+<div class="category">🎮 Gaming</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Trending Products</h2>
+
+<div class="products">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?w=800" alt="">
+
+<div class="product-content">
+
+<h3>Premium Earbuds</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.8</div>
+
+<p>Crystal clear sound with active noise cancellation.</p>
+
+<a href="#" class="buy-btn">Read Review</a>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=800" alt="">
+
+<div class="product-content">
+
+<h3>Smart Watch</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.7</div>
+
+<p>Track fitness, calls, notifications and more.</p>
+
+<a href="#" class="buy-btn">Read Review</a>
+
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1609592806787-3d9f1f6d7d31?w=800" alt="">
+
+<div class="product-content">
+
+<h3>Power Bank</h3>
+
+<div class="rating">⭐⭐⭐⭐⭐ 4.6</div>
+
+<p>Fast charging with long-lasting battery backup.</p>
+
+<a href="#" class="buy-btn">Read Review</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Why Trust Us?</h2>
+
+<div class="trust">
+
+<div class="trust-box">
+✔ Honest Reviews
+</div>
+
+<div class="trust-box">
+✔ Product Comparisons
+</div>
+
+<div class="trust-box">
+✔ Updated Buying Guides
+</div>
+
+<div class="trust-box">
+✔ Best Deals & Offers
+</div>
+
+</div>
+
+</section>
+
+<section class="newsletter">
+
+<h2>Get Weekly Tech Deals</h2>
+
+<input type="email" placeholder="Enter Email">
+
+<button>Subscribe</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 SmartShoppingGuide | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
